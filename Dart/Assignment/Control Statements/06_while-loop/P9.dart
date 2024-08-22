@@ -8,12 +8,12 @@ import 'dart:io';
 void main(){
   print("Enter value:");
   int number = int.parse(stdin.readLineSync()!);
-  int digit = 0;
+  int reverseNo = 0;
 
   while(number > 0){
     int remainder = number % 10;
-    digit = digit * 10 + remainder;
+    reverseNo = reverseNo * 10 + remainder;
     number = number ~/ 10;
   }
-  print(digit);
+  print(reverseNo);
 }

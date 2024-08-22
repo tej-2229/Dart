@@ -1,22 +1,25 @@
 /*
-10. Write a program to print the square of odd numbers and
-cube of even numbers in range 20 to 70.
+Program 1: Write a program to print the sum of all even numbers
+and the multiplication of odd numbers between 1 to 10.
+Output: sum of even numbers between 1 to 10 = 30
+Multiplication of odd numbers between 1 to 10 = 945
 */
 
 import 'dart:io';
 void main(){
-  print("Enter start value:");
-  int start = int.parse(stdin.readLineSync()!);
-   
-  print("Enter end value:");
-  int end = int.parse(stdin.readLineSync()!);
+  int evenSum = 0;
+  int multSum = 1;
+  int i = 1;
 
-  while(start<=end){
-    if(start%2==1){
-      print("Square of Odd Number : ${start*start}");
+  while(i<=10){
+    if(i%2==0){
+      evenSum += i;
     }else{
-      print("Cube of Even Number: ${start*start*start}");
+      multSum *= i;
     }
-    start++;
+    i++;
   }
+  print("Sum of even numbers between 1 to 10 is = $evenSum");
+  print("Multiplication of odd numbers between 1 to 10 is = $multSum");
+  
 }

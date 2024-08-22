@@ -8,14 +8,15 @@ import 'dart:io';
 void main(){
   print("Enter value:");
   int number = int.parse(stdin.readLineSync()!);
-  int digit = 0;
+  int temp = number;
+  int reverseNo = 0;
 
-  while(number > 0){
-    int remainder = number % 10;
-    digit = digit * 10 + remainder;
-    number = number ~/ 10;
+  while(temp > 0){
+    int remainder = temp % 10;
+    reverseNo = reverseNo * 10 + remainder;
+    temp = temp ~/ 10;
   }
-  if(digit == number){
+  if(reverseNo == number){
       print("Number is Palindrome");
   }else{
       print("Number is not Palindrome");

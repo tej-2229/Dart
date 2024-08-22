@@ -13,13 +13,14 @@ import "dart:io";
 void main(){
   print("Enter user-input value:");
   int input = int.parse(stdin.readLineSync()!);
+  int temp = input;
    
-  while(input>=1){
-    print('$input ');
+  while(temp>0){
+    print(temp);
     if(input % 2 == 0){
-      input -= 1;
+      temp--;
     }else{
-      input -= 2;
+      temp-=2;
     }
   }
   

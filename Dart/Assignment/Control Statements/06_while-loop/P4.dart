@@ -6,16 +6,12 @@ Output: 21 28
 
 import 'dart:io';
 void main(){
-  print("Enter a number1 value:");
-  int number1 = int.parse(stdin.readLineSync()!);
-
-  print("Enter a number2 value:");
-  int number2 = int.parse(stdin.readLineSync()!);
-
-  while(number1<=number2){
-    if(number1 % 7 == 0){
-      print(number1);
+  int start = 20;
+  int end = 30;
+  while(start<=end){
+    if(start % 7 == 0){
+      print(start);
     }
-    number1++;
+    start++;
   }
 }

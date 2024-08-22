@@ -10,14 +10,13 @@ void main(){
   print("Enter value:");
   int number = int.parse(stdin.readLineSync()!);
   int count = 0;
-  int temp = number;
    
-  while (temp != 0) {
-    int digit = temp % 10; 
+  while (number != 0) {
+    int digit = number % 10; 
     if (digit % 2 != 0) {
       count += 1; 
     }
-    temp ~/= 10; 
+    number ~/= 10; 
   }
   print(count);
 }
