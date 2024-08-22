@@ -1,17 +1,15 @@
 /*
-6. Write a program to print the numbers who are not divisible by 4
-and their remainder when divided by 4 is 3.Take the numbers
-from range 20 to 50.
-
-Ex: 15 is not divisible by 4 but the remainder is 3.
-Output: 23 27 31 35 39 43 47
+Program 6: Write a program to print the square of odd digits between 20 to
+10
+Output: 361 289 225 169 121
 */
+
 void main(){
   int i = 20;
-  while(i<=50){
-    if(i%4==3){
-      print(i);
+  while(i>=10){
+    if(i%2==1){
+      print(i*i);
     }
-    i++;
+    i--; 
   }
 }

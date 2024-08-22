@@ -1,8 +1,14 @@
-//4. Write a program to print the square of numbers in range 100 to 120.
+/*
+Program 4: Write a program to print even numbers 50 to 30
+Output: 50 48 46 44 42 40 38 36 34 32 30
+*/
+
 void main(){
-  int i = 100;
-  while(i<=120){
-    print(i*i);
-    i++;
+  int i = 50;
+  while(i>=30){
+    if(i%2==0){
+      print(i);
+    }
+    i--; 
   }
 }

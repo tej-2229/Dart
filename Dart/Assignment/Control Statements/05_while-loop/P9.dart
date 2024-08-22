@@ -1,10 +1,26 @@
-//9. Write a program to print the sum of squares of the numbers in range 1 to 15. Output: 385
+/*
+Program 9: Write a program to print the countdown of days to submit the
+assignment
+Take numDays = 7
+Output:
+
+7 days remaining
+6 days remaining
+5 days remaining
+.
+.
+1 day remaining
+0 days Assignment is Overdue
+*/
+
+import 'dart:io';
 void main(){
-  int i = 1;
+  print("Enter user-input value:");
+  int days = int.parse(stdin.readLineSync()!);
   int sum = 0;
-  while(i<=15){
-    sum += i*i;
-    i++;
+  while(days>0){
+   print("$days days remaining");
+   days -= 1;
   }
-  print(sum);
+  print("0 days Assignment is Overdue");
 }

@@ -1,10 +1,15 @@
-//5. Write a program to print the numbers that are divisible by both 4 and 3 in range 1 to 100. Output: 12 24 36 48 60 72 84 96
+/*
+Program 5: Write a program to print the square of even digits between
+40 to 50
+Output: 1600 1764 1936 2116 2304 2500
+*/
+
 void main(){
-  int i = 1;
-  while(i<=100){
-    if(i%4==0 && i%3==0){
-      print(i);
+  int i = 40;
+  while(i<=50){
+    if(i%2==0){
+      print(i*i);
     }
-    i++;
+    i++; 
   }
 }

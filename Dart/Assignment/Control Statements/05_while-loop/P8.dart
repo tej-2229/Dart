@@ -1,11 +1,17 @@
-//8. Write a program to print the sum of all the numbers in the table of 12 . Output: 660
+/*
+Program 8: Write a program to print the product of odd digits between 10
+to 1
+Output: 945
+*/
+
 void main(){
-  int i = 1;
-  int sum = 0;
-  int table = 12;
-  while(i<=10){
-    sum += table * i;
-    i++;
+  int i = 10;
+  int product = 1;
+  while(i>=1){
+    if(i%2==1){
+      product *= i;
+    }
+    i--;
   }
-  print(sum);
+  print(product);
 }

@@ -1,10 +1,13 @@
-//2. Write a program to print the numbers divisible by 9 in the range 63 to 123
+/*
+Program 2 : Write a program to print a table of 5 in reverse order
+Output: 50 45 40 35 30 25 20 15 10 5
+*/
+
 void main(){
-  int i = 63;
-  while(i<=123){
-    if(i%9==0){
-      print(i);
-    }
-    i++;
+  int i = 10;
+  int number = 5;
+  while(i>0){
+    print(i*5);
+    i--;
   }
 }

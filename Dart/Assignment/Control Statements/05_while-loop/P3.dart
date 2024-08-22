@@ -1,12 +1,14 @@
-//3. Write a program to print the sum of odd numbers in the range 20 to 120. Output: 3500
+/*
+Program 3: Write a program to print all single digit numbers in reverse order
+Output: 9 8 7 6 5 4 3 2 1 0
+*/
+
 void main(){
-  int i = 20;
-  int sum = 0;
-  while(i<=120){
-    if(i%2==1){
-      sum += i;
-    }
-    i++;
+  int i = 9;
+  
+  while(i>=0){
+    print(i);
+    i--;
   }
-  print(sum);
+  
 }
