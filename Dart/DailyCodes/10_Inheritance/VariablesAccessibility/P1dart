@@ -1,0 +1,21 @@
+//Accessing static variable inherited from parent class
+class Demo{
+  int x = 10;
+  static int y =20;
+}
+class Child extends Demo{
+
+}
+void main(){
+  Child obj = Child();
+  print(obj.x);
+  print(obj.y);
+}
+
+/*
+P7.dart:11:13: Error: The getter 'y' isn't defined for the class 'Child'.
+ - 'Child' is from 'P7.dart'.
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'y'.
+  print(obj.y);
+            ^
+*/
