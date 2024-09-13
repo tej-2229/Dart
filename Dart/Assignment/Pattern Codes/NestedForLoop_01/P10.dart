@@ -19,10 +19,10 @@ void main() {
     int temp = rows - i + 1;
     for (int j = 1; j <= i; j++) {
       if (j % 2 == 0) {
-        stdout.write("$num\t");
+        stdout.write("$num ");
         num++;
       } else {
-        stdout.write("$temp\t");
+        stdout.write("$temp ");
         temp++;
       }
     }
